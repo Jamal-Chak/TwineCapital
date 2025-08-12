@@ -1,0 +1,33 @@
+# =========================
+# TwineCapital Project Gitignore
+# Covers Frontend (React) + Backend (Flask)
+# =========================
+
+# Node.js dependencies
+frontend/node_modules/
+
+# Python virtual environment
+backend/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build output
+frontend/dist/
+frontend/build/
+
+# Environment variables
+*.env
+backend/.env
+frontend/.env
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
