@@ -1,0 +1,110 @@
+.about-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.about-hero {
+  background-color: #fcd34d;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about-hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.about-gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-content {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.about-columns p {
+  flex: 1 1 300px;
+}
+
+.about-features {
+  background-color: #f9fafb;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  margin-bottom: 8px;
+  color: #111827;
+  font-size: 18px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ✅ Team Image Styling */
+.team-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #3b82f6;
+  margin-bottom: 10px;
+}
+
+/* ✅ Service Icon Styling (like accounting, SEO, software dev icons) */
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+  display: block;
+}
