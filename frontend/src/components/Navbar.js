@@ -1,3 +1,4 @@
+// src/components/Navbar.js
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -16,13 +17,18 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleDropdown = () => setDropdown(!dropdown);
 
+  // FIXED: Using proper template literal with backticks
   const getPath = (item) =>
     item.toLowerCase() === "home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "-")}`;
 
   const handleLogout = async () => {
-    await logout();
-    setDropdown(false);
-    navigate("/login");
+    try {
+      await logout();
+      setDropdown(false);
+      navigate("/login");
+    } catch (err) {
+      console.error("Logout error:", err);
+    }
   };
 
   return (
@@ -39,11 +45,7 @@ const Navbar = () => {
             const path = getPath(item);
             const isActive = location.pathname === path;
             return (
-              <motion.div
-                key={item}
-                whileHover={{ scale: 1.05 }}
-                className="relative group"
-              >
+              <motion.div key={item} whileHover={{ scale: 1.05 }} className="relative group">
                 <Link
                   to={path}
                   className={`font-medium transition text-gray-800 dark:text-gray-100 ${
@@ -61,7 +63,7 @@ const Navbar = () => {
             );
           })}
 
-          {/* ✅ Testimonials Link */}
+          {/* Testimonials Link */}
           <Link
             to="/submit-testimonial"
             className={`font-medium transition text-gray-800 dark:text-gray-100 ${
@@ -73,8 +75,8 @@ const Navbar = () => {
             Testimonials
           </Link>
 
-          {/* Auth Section */}
-          {currentUser ? (
+          {/* Auth Section - Only show if user is logged in */}
+          {currentUser && (
             <div className="relative ml-4">
               <button
                 onClick={toggleDropdown}
@@ -105,13 +107,6 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-          ) : (
-            <Link
-              to="/login"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm"
-            >
-              Login
-            </Link>
           )}
         </nav>
 
@@ -149,7 +144,6 @@ const Navbar = () => {
             );
           })}
 
-          {/* ✅ Mobile Testimonials Link */}
           <Link
             to="/submit-testimonial"
             onClick={() => setIsOpen(false)}
@@ -162,8 +156,8 @@ const Navbar = () => {
             Testimonials
           </Link>
 
-          {/* Auth in Mobile */}
-          {currentUser ? (
+          {/* Only show logout in mobile menu if user is logged in */}
+          {currentUser && (
             <button
               onClick={() => {
                 handleLogout();
@@ -173,14 +167,6 @@ const Navbar = () => {
             >
               Logout
             </button>
-          ) : (
-            <Link
-              to="/login"
-              onClick={() => setIsOpen(false)}
-              className="block text-blue-600 font-semibold"
-            >
-              Login
-            </Link>
           )}
         </div>
       )}

@@ -1,3 +1,4 @@
+// frontend/src/App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -11,6 +12,7 @@ import { AuthProvider } from "./context/AuthContext";
 import PrivateRoute from "./components/PrivateRoute";
 import Dashboard from "./pages/Dashboard";
 import Account from "./pages/Account";
+import AdminDashboard from "./pages/AdminDashboard"; // ✅ Admin dashboard import
 
 // Pages
 import Home from "./pages/Home";
@@ -53,15 +55,39 @@ function App() {
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />
                 <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/submit-testimonial" element={<SubmitTestimonial />} /> {/* ✅ Added */}
+                <Route path="/submit-testimonial" element={<SubmitTestimonial />} />
 
                 {/* Auth Routes */}
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
 
                 {/* Protected Routes */}
-                <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
-                <Route path="/account" element={<PrivateRoute><Account /></PrivateRoute>} />
+                <Route
+                  path="/dashboard"
+                  element={
+                    <PrivateRoute>
+                      <Dashboard />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  path="/account"
+                  element={
+                    <PrivateRoute>
+                      <Account />
+                    </PrivateRoute>
+                  }
+                />
+
+                {/* ✅ Admin (protected) */}
+                <Route
+                  path="/admin"
+                  element={
+                    <PrivateRoute>
+                      <AdminDashboard />
+                    </PrivateRoute>
+                  }
+                />
 
                 {/* Service Detail Pages */}
                 <Route path="/services/accounting-tax" element={<AccountingTax />} />
