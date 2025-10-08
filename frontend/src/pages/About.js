@@ -1,5 +1,6 @@
 import React from "react";
 import Testimonials from "../components/Testimonials";
+import EmailCapture from "../components/EmailCapture";
 
 // ✅ Team Members
 import founder from "../assets/team/founder.jpg";
@@ -185,7 +186,7 @@ function About() {
         </div>
       </section>
 
-      {/* Testimonials Section - FIXED */}
+      {/* Testimonials Section */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900 dark:text-white">
@@ -195,6 +196,44 @@ function About() {
             Discover why businesses trust TwineCapital for their financial technology needs
           </p>
           <Testimonials />
+        </div>
+      </section>
+
+      {/* Email Capture Section */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">
+                Ready to Transform Your Business?
+              </h2>
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                Join hundreds of businesses that trust TwineCapital for their financial 
+                and technological needs.
+              </p>
+              <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Get personalized financial insights
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Access exclusive content and tools
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Connect with our expert team
+                </li>
+              </ul>
+            </div>
+            <EmailCapture />
+          </div>
         </div>
       </section>
     </div>

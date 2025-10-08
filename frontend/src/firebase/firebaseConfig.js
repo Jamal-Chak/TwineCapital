@@ -1,9 +1,9 @@
-// Import the functions you need from the SDKs you need
+// frontend/src/firebase/firebaseConfig.js
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth"; // ✅ For authentication
-//import { getAnalytics } from "firebase/analytics"; // ❌ Optional (commented out to prevent warning)
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getAnalytics } from "firebase/analytics"; // Added Analytics import
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCGQVCDzgNL9v8KJHhbhgwIL915RLBQXog",
   authDomain: "twinecapital-726aa.firebaseapp.com",
@@ -17,11 +17,14 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// ✅ Initialize and export Firebase Auth
-const auth = getAuth(app);
+// Initialize and export Firebase Auth
+export const auth = getAuth(app);
 
-// ❌ Optional analytics (disabled to avoid warning)
-// const analytics = getAnalytics(app);
+// Initialize and export Firestore
+export const db = getFirestore(app);
 
-// ✅ Export only what's used
-export { auth };
+// Initialize and export Analytics
+export const analytics = getAnalytics(app);
+
+// Export the app instance
+export default app;

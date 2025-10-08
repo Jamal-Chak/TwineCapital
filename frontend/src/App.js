@@ -2,6 +2,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+// ✅ Import Firebase Analytics configuration
+import "./firebase/firebaseConfig";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
@@ -12,7 +15,7 @@ import { AuthProvider } from "./context/AuthContext";
 import PrivateRoute from "./components/PrivateRoute";
 import Dashboard from "./pages/Dashboard";
 import Account from "./pages/Account";
-import AdminDashboard from "./pages/AdminDashboard"; // ✅ Admin dashboard import
+import AdminDashboard from "./pages/AdminDashboard";
 
 // Pages
 import Home from "./pages/Home";
@@ -24,7 +27,7 @@ import BlogPost from "./pages/BlogPost";
 import Portfolio from "./pages/Portfolio";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import SubmitTestimonial from "./pages/SubmitTestimonial"; // ✅ Testimonial form page
+import SubmitTestimonial from "./pages/SubmitTestimonial";
 
 // Individual service detail pages
 import AccountingTax from "./pages/services/AccountingTax";
