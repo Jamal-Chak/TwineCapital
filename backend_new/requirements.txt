@@ -1,6 +1,6 @@
-fastapi==0.109.2
-uvicorn==0.27.1
-pydantic==2.6.1
+fastapi
+uvicorn
+pydantic
 python-multipart
 python-dotenv
 feedparser
