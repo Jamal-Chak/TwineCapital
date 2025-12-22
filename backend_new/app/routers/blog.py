@@ -44,7 +44,9 @@ def get_posts(q: str = None):
             url = f"https://news.google.com/rss/search?q={encoded_query}&hl=en-US&gl=US&ceid=US:en"
             source_name = "Google News"
 
-        feed = feedparser.parse(url)
+        # Add User-Agent to avoid 403 Forbidden from some RSS feeds
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+        feed = feedparser.parse(url, request_headers=headers)
         
         posts = []
         for entry in feed.entries[:12]:
