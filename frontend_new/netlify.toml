@@ -1,5 +1,5 @@
 [build]
-  command = "echo 'Skipping Netlify Build - Using Local Build'"
+  command = "npm run build"
   publish = ".next"
 
 [[plugins]]

@@ -1,0 +1,30 @@
+﻿gh.exe : 
+At line:1 char:10
++ echo Y | & "C:\Program 
+Files\GitHub CLI\gh.exe" 
+auth login --web -p h ...
++          ~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (:  
+  String) [], RemoteExc   
+ eption
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+! First copy your 
+one-time code: 55BB-9C8B
+Open this URL to continue 
+in your web browser: https
+://github.com/login/device
+Γ£ô Authentication 
+complete.
+- gh config set -h 
+github.com git_protocol 
+https
+Γ£ô Configured git 
+protocol
+Γ£ô Logged in as 
+Jamal-Chak

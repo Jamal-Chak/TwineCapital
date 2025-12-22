@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useParams } from "next/navigation";
 import { portfolioData } from "@/data/portfolioData";
 import { FaArrowLeft, FaCheckCircle, FaLayerGroup } from "react-icons/fa";
@@ -19,10 +20,11 @@ export default function ProjectDetail() {
             {/* Hero Image Section */}
             <div className="relative h-[50vh] w-full">
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10"></div>
-                <img
+                <Image
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                 />
                 <div className="absolute inset-0 bg-slate-900/40 z-0"></div>
 

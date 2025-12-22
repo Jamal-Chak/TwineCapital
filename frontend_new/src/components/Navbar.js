@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -32,11 +33,15 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-3 group">
-                    <img
-                        src="/assets/logo.png"
-                        alt="TwineCapital"
-                        className="h-10 w-auto object-contain group-hover:scale-110 transition-transform duration-300 mix-blend-screen"
-                    />
+                    <div className="relative h-10 w-auto">
+                        <Image
+                            src="/assets/logo.png"
+                            alt="TwineCapital"
+                            width={150}
+                            height={40}
+                            className="h-10 w-auto object-contain group-hover:scale-110 transition-transform duration-300 mix-blend-screen"
+                        />
+                    </div>
                     <span className="text-2xl font-bold text-white tracking-widest uppercase">
                         <span className="text-primary">Twine</span>Capital
                     </span>
@@ -74,10 +79,12 @@ const Navbar = () => {
                                 onClick={toggleDropdown}
                                 className="flex items-center space-x-2 text-sm font-medium text-white focus:outline-none"
                             >
-                                <img
+                                <Image
                                     src={user.photoURL || "/default-avatar.png"}
                                     alt="User Avatar"
-                                    className="w-8 h-8 rounded-full object-cover border border-gray-600"
+                                    width={32}
+                                    height={32}
+                                    className="rounded-full object-cover border border-gray-600"
                                 />
                             </button>
                             {dropdown && (

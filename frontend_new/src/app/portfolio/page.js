@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import { portfolioData } from "@/data/portfolioData";
 
@@ -35,10 +36,11 @@ export default function Portfolio() {
                             {/* Image Container with Zoom Effect */}
                             <div className="relative h-64 overflow-hidden">
                                 <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors z-10"></div>
-                                <img
+                                <Image
                                     src={item.image}
                                     alt={item.title}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                                 <div className="absolute top-4 left-4 z-20">
                                     <span className="bg-cyan-500/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide shadow-sm">

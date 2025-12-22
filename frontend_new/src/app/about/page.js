@@ -45,7 +45,7 @@ export default function About() {
                     <div className="card w-64">
                         <div className="h-20 w-20 mx-auto relative mb-4">
                             {/* Fallback/Placeholder if image missing */}
-                            <img src="/assets/cards/accounting.png" alt="Accounting" className="object-contain h-full w-full" />
+                            <Image src="/assets/cards/accounting.png" alt="Accounting" fill className="object-contain" />
                         </div>
                         <h3 className="text-xl font-bold mb-2 dark:text-white">Accounting & Tax</h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -55,7 +55,7 @@ export default function About() {
                     {/* Card 2 */}
                     <div className="card w-64">
                         <div className="h-20 w-20 mx-auto relative mb-4">
-                            <img src="/assets/cards/seo.png" alt="SEO" className="object-contain h-full w-full" />
+                            <Image src="/assets/cards/seo.png" alt="SEO" fill className="object-contain" />
                         </div>
                         <h3 className="text-xl font-bold mb-2 dark:text-white">SEO Optimization</h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -65,7 +65,7 @@ export default function About() {
                     {/* Card 3 */}
                     <div className="card w-64">
                         <div className="h-20 w-20 mx-auto relative mb-4">
-                            <img src="/assets/cards/software.png" alt="Software" className="object-contain h-full w-full" />
+                            <Image src="/assets/cards/software.png" alt="Software" fill className="object-contain" />
                         </div>
                         <h3 className="text-xl font-bold mb-2 dark:text-white">Software Development</h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -81,25 +81,25 @@ export default function About() {
                 <div className="flex flex-wrap justify-center gap-8">
                     {/* Member 1 */}
                     <div className="card w-60">
-                        <img src="/assets/team/founder.jpg" alt="Jonathan Chakombera" className="w-24 h-24 rounded-full border-4 border-primary mx-auto mb-4 object-cover" />
+                        <Image src="/assets/team/founder.jpg" alt="Jonathan Chakombera" width={96} height={96} className="rounded-full border-4 border-primary mx-auto mb-4 object-cover" />
                         <h3 className="text-lg font-bold dark:text-white">Jonathan Chakombera</h3>
                         <p className="text-primary font-medium">Founder & CEO</p>
                     </div>
                     {/* Member 2 */}
                     <div className="card w-60">
-                        <img src="/assets/team/teammate1.jpg" alt="Keith Ndlovu" className="w-24 h-24 rounded-full border-4 border-primary mx-auto mb-4 object-cover" />
+                        <Image src="/assets/team/teammate1.jpg" alt="Keith Ndlovu" width={96} height={96} className="rounded-full border-4 border-primary mx-auto mb-4 object-cover" />
                         <h3 className="text-lg font-bold dark:text-white">Keith Ndlovu</h3>
                         <p className="text-primary font-medium">Finance Lead</p>
                     </div>
                     {/* Member 3 */}
                     <div className="card w-60">
-                        <img src="/assets/team/teammate2.jpg" alt="Tessla Chakombera" className="w-24 h-24 rounded-full border-4 border-primary mx-auto mb-4 object-cover" />
+                        <Image src="/assets/team/teammate2.jpg" alt="Tessla Chakombera" width={96} height={96} className="rounded-full border-4 border-primary mx-auto mb-4 object-cover" />
                         <h3 className="text-lg font-bold dark:text-white">Tessla Chakombera</h3>
                         <p className="text-primary font-medium">Junior Developer</p>
                     </div>
                     {/* Member 4 */}
                     <div className="card w-60">
-                        <img src="/assets/team/consultant.jpg" alt="Matthew Munava" className="w-24 h-24 rounded-full border-4 border-primary mx-auto mb-4 object-cover" />
+                        <Image src="/assets/team/consultant.jpg" alt="Matthew Munava" width={96} height={96} className="rounded-full border-4 border-primary mx-auto mb-4 object-cover" />
                         <h3 className="text-lg font-bold dark:text-white">Matthew Munava</h3>
                         <p className="text-primary font-medium">Consultant</p>
                     </div>

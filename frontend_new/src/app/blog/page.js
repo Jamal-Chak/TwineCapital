@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
+import Image from "next/image";
 
 export default function Blog() {
     const [searchTerm, setSearchTerm] = useState("");
@@ -50,7 +51,9 @@ export default function Blog() {
         }}>
             <div className="max-w-7xl mx-auto px-4 py-8 min-h-screen bg-slate-900/50">
                 <div className="flex items-center mb-6">
-                    <img src="/assets/twineverse-logo.png" alt="TwineVerse Logo" className="h-12 w-12 mr-4" />
+                    <div className="relative h-12 w-12 mr-4">
+                        <Image src="/assets/twineverse-logo.png" alt="TwineVerse Logo" fill className="object-contain" />
+                    </div>
                     <h1 className="text-3xl font-bold text-white">TwineVerse Blog</h1>
                 </div>
 
@@ -76,6 +79,7 @@ export default function Blog() {
                                 key={post.id}
                                 className="bg-slate-800/60 p-4 rounded shadow hover:scale-105 transition border border-slate-600 hover:border-cyan-400 flex flex-col"
                             >
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src={post.image && post.image.startsWith("http") ? post.image : "/assets/blog-background.jpg"}
                                     alt={post.title}

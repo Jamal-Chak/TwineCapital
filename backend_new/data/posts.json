@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "slug": "welcome-to-twineverse",
+    "title": "Welcome to TwineVerse",
+    "excerpt": "TwineVerse is our new blog covering tech + accounting.",
+    "content": ["Welcome! This is the first post..."],
+    "author": {"name": "TwineCapital"},
+    "date": "Jun 20, 2025",
+    "category": "Company",
+    "image": "",
+    "published": true
+  }
+]
