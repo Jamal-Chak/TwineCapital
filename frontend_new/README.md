@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Production Environment
+
+Copy `.env.example` into your hosting provider and set the Supabase variables before shipping. Testimonials use Supabase in production; the JSON fallback is for local development only unless `ALLOW_LOCAL_TESTIMONIAL_FALLBACK=1` is explicitly set.
+
+For testimonial moderation, set `SUPABASE_SERVICE_ROLE_KEY` and add your admin email to `ADMIN_EMAILS`. You can also set `TESTIMONIAL_ADMIN_KEY` as a backup admin credential.
+
 ## Getting Started
 
 First, run the development server:

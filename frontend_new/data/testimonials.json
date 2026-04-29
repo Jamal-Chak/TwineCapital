@@ -1,0 +1,22 @@
+[
+  {
+    "id": "seed-accounting-operations",
+    "name": "Operations Lead",
+    "feedback": "TwineCapital helped us clean up our financial operations and gave us a clearer view of the numbers behind our growth.",
+    "rating": 5,
+    "role": "Client",
+    "company": "Growth Business",
+    "is_approved": true,
+    "created_at": "2026-04-01T08:00:00.000Z"
+  },
+  {
+    "id": "seed-digital-systems",
+    "name": "Business Founder",
+    "feedback": "The team understood both the finance and technology sides of the problem, which made the solution practical from day one.",
+    "rating": 5,
+    "role": "Founder",
+    "company": "Digital Services Company",
+    "is_approved": true,
+    "created_at": "2026-03-18T08:00:00.000Z"
+  }
+]

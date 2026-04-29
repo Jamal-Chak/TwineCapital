@@ -19,6 +19,7 @@ create table public.testimonials (
   name text not null,
   email text,
   feedback text not null,
+  rating integer default 5 check (rating >= 1 and rating <= 5),
   role text, -- e.g. "CEO at TechCorp"
   company text,
   is_approved boolean default false, -- Moderation

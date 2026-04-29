@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import axios from "axios";
 import { FaStar } from "react-icons/fa";
 
 export default function SubmitTestimonial() {
@@ -12,6 +11,7 @@ export default function SubmitTestimonial() {
     });
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState("");
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = (e) => {
         setFormData((prev) => ({
@@ -22,20 +22,36 @@ export default function SubmitTestimonial() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsSubmitting(true);
+        setError("");
+
         try {
-            await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/testimonials`, {
-                name: formData.name,
-                email: formData.email,
-                rating: formData.rating,
-                feedback: formData.feedback,
+            const response = await fetch("/api/testimonials", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    rating: formData.rating,
+                    feedback: formData.feedback,
+                }),
             });
+
+            const payload = await response.json();
+
+            if (!response.ok) {
+                throw new Error(payload.error || "Something went wrong. Please try again.");
+            }
 
             setSubmitted(true);
             setFormData({ name: "", email: "", rating: 5, feedback: "" });
-            setError("");
         } catch (err) {
             console.error(err);
-            setError("Something went wrong. Please try again.");
+            setError(err.message || "Something went wrong. Please try again.");
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -125,9 +141,10 @@ export default function SubmitTestimonial() {
 
                             <button
                                 type="submit"
-                                className="w-full bg-cyan-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-cyan-500 transition-colors duration-300 mt-4 shadow-lg"
+                                disabled={isSubmitting}
+                                className="w-full bg-cyan-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-cyan-500 transition-colors duration-300 mt-4 shadow-lg disabled:cursor-not-allowed disabled:opacity-60"
                             >
-                                Submit Testimonial
+                                {isSubmitting ? "Submitting..." : "Submit Testimonial"}
                             </button>
                         </form>
                     )}
