@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import MobileVideo from "./MobileVideo";
 
 export default function TeamSection() {
     return (
@@ -35,15 +36,10 @@ export default function TeamSection() {
                         viewport={{ once: true }}
                         className="relative group rounded-3xl overflow-hidden aspect-[4/3]"
                     >
-                        <video 
-                            autoPlay 
-                            muted 
-                            loop 
-                            playsInline 
+                        <MobileVideo
+                            src="/assets/videos/Team.mp4"
                             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                        >
-                            <source src="/assets/videos/Team.mp4" type="video/mp4" />
-                        </video>
+                        />
                         <div className="absolute inset-0 bg-slate-950/40 group-hover:bg-transparent transition-colors duration-500"></div>
                         <div className="absolute bottom-0 left-0 p-8">
                             <h3 className="text-2xl font-bold">Strategic Advisory</h3>
@@ -57,15 +53,10 @@ export default function TeamSection() {
                         viewport={{ once: true }}
                         className="relative group rounded-3xl overflow-hidden aspect-[4/3]"
                     >
-                        <video 
-                            autoPlay 
-                            muted 
-                            loop 
-                            playsInline 
+                        <MobileVideo
+                            src="/assets/videos/TeamVideo.mp4"
                             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                        >
-                            <source src="/assets/videos/TeamVideo.mp4" type="video/mp4" />
-                        </video>
+                        />
                         <div className="absolute inset-0 bg-slate-950/40 group-hover:bg-transparent transition-colors duration-500"></div>
                         <div className="absolute bottom-0 left-0 p-8">
                             <h3 className="text-2xl font-bold">Collaborative Success</h3>

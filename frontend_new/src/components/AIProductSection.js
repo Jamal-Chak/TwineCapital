@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import MobileVideo from "./MobileVideo";
 
 export default function AIProductSection() {
     return (
@@ -34,28 +35,18 @@ export default function AIProductSection() {
                     className="relative z-10 grid grid-cols-1 gap-4"
                 >
                     <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-[0_0_50px_rgba(6,182,212,0.15)] bg-slate-900 border-2 border-slate-700 aspect-video relative group">
-                        <video 
-                            autoPlay 
-                            muted 
-                            loop 
-                            playsInline 
+                        <MobileVideo
+                            src="/assets/videos/TwinePulse.mp4"
                             className="w-full h-full object-cover"
-                        >
-                            <source src="/assets/videos/TwinePulse.mp4" type="video/mp4" />
-                        </video>
+                        />
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
                         <div className="absolute bottom-4 left-4 text-xs font-bold text-cyan-400 uppercase tracking-widest">Twine Pulse AI</div>
                     </div>
                     <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-[0_0_50px_rgba(6,182,212,0.15)] bg-slate-900 border-2 border-slate-700 aspect-video relative group ml-8 -mt-12 hidden md:block">
-                        <video 
-                            autoPlay 
-                            muted 
-                            loop 
-                            playsInline 
+                        <MobileVideo
+                            src="/assets/videos/DataAnalytics.mp4"
                             className="w-full h-full object-cover"
-                        >
-                            <source src="/assets/videos/DataAnalytics.mp4" type="video/mp4" />
-                        </video>
+                        />
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
                         <div className="absolute bottom-4 left-4 text-xs font-bold text-blue-400 uppercase tracking-widest">Real-time Analytics</div>
                     </div>

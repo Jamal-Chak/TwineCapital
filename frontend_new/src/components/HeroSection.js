@@ -1,24 +1,21 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import MobileVideo from "./MobileVideo";
 
 export default function HeroSection() {
     return (
         <section className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden">
             {/* Background Video */}
-            <video 
-                autoPlay 
-                muted 
-                loop 
-                playsInline 
+            <MobileVideo
+                src="/assets/videos/IntroVideo.mp4"
+                eager
                 className="absolute inset-0 w-full h-full object-cover z-0"
             >
-                <source src="/assets/videos/IntroVideo.mp4" type="video/mp4" />
                 {/* Fallback */}
                 <div className="absolute inset-0 bg-slate-900 z-0"></div>
-            </video>
+            </MobileVideo>
 
             {/* Dark overlay for readability */}
             <div className="absolute inset-0 bg-slate-900/60 z-10"></div>

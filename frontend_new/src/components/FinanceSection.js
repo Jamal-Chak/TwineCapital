@@ -2,20 +2,16 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import MobileVideo from "./MobileVideo";
 
 export default function FinanceSection() {
     return (
         <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden py-24">
             {/* Background Video */}
-            <video 
-                autoPlay 
-                muted 
-                loop 
-                playsInline 
+            <MobileVideo
+                src="/assets/videos/Finance.mp4"
                 className="absolute inset-0 w-full h-full object-cover z-0"
-            >
-                <source src="/assets/videos/Finance.mp4" type="video/mp4" />
-            </video>
+            />
 
             {/* Dark overlay */}
             <div className="absolute inset-0 bg-slate-950/80 z-10"></div>

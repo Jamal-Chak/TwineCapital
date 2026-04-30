@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import MobileVideo from "./MobileVideo";
 
 export default function TechSection() {
     return (
@@ -27,15 +28,10 @@ export default function TechSection() {
                         viewport={{ once: true }}
                         className="rounded-3xl overflow-hidden relative group aspect-video shadow-2xl"
                     >
-                        <video 
-                            autoPlay 
-                            muted 
-                            loop 
-                            playsInline 
+                        <MobileVideo
+                            src="/assets/videos/CodeVideo.mp4"
                             className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000"
-                        >
-                            <source src="/assets/videos/CodeVideo.mp4" type="video/mp4" />
-                        </video>
+                        />
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent flex items-end p-8">
                             <h3 className="text-2xl font-bold">Software Engineering</h3>
                         </div>
@@ -48,15 +44,10 @@ export default function TechSection() {
                         viewport={{ once: true }}
                         className="rounded-3xl overflow-hidden relative group aspect-video shadow-2xl"
                     >
-                        <video 
-                            autoPlay 
-                            muted 
-                            loop 
-                            playsInline 
+                        <MobileVideo
+                            src="/assets/videos/DigitalTransformation.mp4"
                             className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000"
-                        >
-                            <source src="/assets/videos/DigitalTransformation.mp4" type="video/mp4" />
-                        </video>
+                        />
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent flex items-end p-8">
                             <h3 className="text-2xl font-bold">Digital Transformation</h3>
                         </div>

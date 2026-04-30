@@ -1,21 +1,17 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import MobileVideo from "./MobileVideo";
 
 export default function DataSection() {
     return (
         <section className="py-24 bg-slate-950 text-white relative overflow-hidden">
             {/* Background elements */}
             <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-                <video 
-                    autoPlay 
-                    muted 
-                    loop 
-                    playsInline 
+                <MobileVideo
+                    src="/assets/videos/Data.mp4"
                     className="w-full h-full object-cover"
-                >
-                    <source src="/assets/videos/Data.mp4" type="video/mp4" />
-                </video>
+                />
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -49,15 +45,10 @@ export default function DataSection() {
                         viewport={{ once: true }}
                         className="rounded-3xl overflow-hidden border border-slate-800 shadow-2xl aspect-square lg:aspect-video"
                     >
-                        <video 
-                            autoPlay 
-                            muted 
-                            loop 
-                            playsInline 
+                        <MobileVideo
+                            src="/assets/videos/DataMining.mp4"
                             className="w-full h-full object-cover"
-                        >
-                            <source src="/assets/videos/DataMining.mp4" type="video/mp4" />
-                        </video>
+                        />
                     </motion.div>
                 </div>
             </div>
