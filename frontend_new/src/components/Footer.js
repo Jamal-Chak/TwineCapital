@@ -7,7 +7,7 @@ function Footer() {
         <footer className="bg-blue-800 dark:bg-gray-800 text-white text-center text-sm p-6 transition-colors duration-500">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6 mb-4">
                 <div className="text-left md:text-center">
-                    <h3 className="font-bold mb-2 text-lg">TwineCapital</h3>
+                    <h3 className="font-bold mb-2 text-lg">TwineNexus</h3>
                     <p className="text-gray-200">Empowering Financial & Tech Solutions</p>
                 </div>
                 <div>
@@ -32,7 +32,7 @@ function Footer() {
                 </div>
             </div>
             <div className="border-t border-blue-700/50 mt-4 pt-4">
-                <p>&copy; {new Date().getFullYear()} TwineCapital. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} TwineNexus. All rights reserved.</p>
             </div>
         </footer>
     );

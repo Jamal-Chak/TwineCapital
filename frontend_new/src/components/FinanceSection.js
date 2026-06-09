@@ -33,7 +33,7 @@ export default function FinanceSection() {
                     viewport={{ once: true }}
                     className="flex flex-col sm:flex-row gap-6 justify-center"
                 >
-                    <Link href="/contact" className="bg-white text-slate-950 hover:bg-gray-200 font-bold py-4 px-12 rounded-xl text-xl transition-all">
+                    <Link href="/contact" className="bg-[#4F46E5] text-white hover:bg-indigo-700 font-bold py-4 px-12 rounded-xl text-xl transition-all">
                         Get Started
                     </Link>
                     <Link href="/services" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-slate-950 font-bold py-4 px-12 rounded-xl text-xl transition-all">

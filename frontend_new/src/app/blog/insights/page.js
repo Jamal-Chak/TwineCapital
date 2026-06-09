@@ -4,7 +4,7 @@ import InsightsPage from './InsightsPage';
 export const revalidate = 1800;
 
 export const metadata = {
-    title: 'Insights & Market Intelligence | TwineCapital',
+    title: 'Insights & Market Intelligence | TwineNexus',
     description: 'Fresh updates in finance, AI, accounting, and business innovation. Stay informed with the latest market intelligence.',
     keywords: ['finance', 'AI', 'accounting', 'business', 'news', 'insights', 'market intelligence'],
 };

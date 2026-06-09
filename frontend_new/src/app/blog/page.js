@@ -2,7 +2,7 @@ import { fetchNews } from "@/services/newsAggregator";
 import InsightsPage from "./insights/InsightsPage";
 
 export const metadata = {
-    title: "Insights & Market Intelligence | TwineCapital",
+    title: "Insights & Market Intelligence | TwineNexus",
     description: "Fresh updates in finance, AI, accounting, and business innovation from curated external sources.",
 };
 

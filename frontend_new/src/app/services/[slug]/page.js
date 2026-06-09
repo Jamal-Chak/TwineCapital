@@ -80,7 +80,7 @@ export default function ServiceDetail() {
                                 <p className="mb-8 text-blue-100">Get in touch with our experts today for a free consultation.</p>
                                 <Link
                                     href="/contact"
-                                    className="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-transform transform hover:scale-105 shadow-md"
+                                    className="inline-block bg-[#4F46E5] text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-700 transition-transform transform hover:scale-105 shadow-md"
                                 >
                                     Get Started Project
                                 </Link>

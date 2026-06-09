@@ -18,22 +18,21 @@ CORS(app, resources={
     }
 })
 
-# ✅ Import and register blueprints with error handling
 try:
     from app.routes.testimonial import testimonial_bp
     app.register_blueprint(testimonial_bp)
-    print("✅ Testimonial routes registered successfully")
+    print("Testimonial routes registered successfully")
 except ImportError as e:
-    print(f"❌ Failed to import testimonial routes: {e}")
+    print(f"Failed to import testimonial routes: {e}")
 
 try:
     from app.routes.blog import blog_bp
     app.register_blueprint(blog_bp)
-    print("✅ Blog routes registered successfully")
+    print("Blog routes registered successfully")
 except ImportError as e:
-    print(f"⚠️  Blog routes not available: {e}")
+    print(f"Blog routes not available: {e}")
 
-# ✅ Root route
+# Root route
 @app.route('/')
 def home():
     return jsonify({
@@ -90,10 +89,10 @@ def not_found(error):
 def internal_error(error):
     return jsonify({"error": "Internal server error"}), 500
 
-# ✅ Run the app
+# Run the app
 if __name__ == '__main__':
-    print("🚀 Starting TwineCapital Backend Server...")
-    print("📍 Available endpoints:")
+    print("Starting TwineCapital Backend Server...")
+    print("Available endpoints:")
     print("   - GET  /")
     print("   - GET  /health")
     print("   - GET  /testimonials")

@@ -72,7 +72,7 @@ const EmailCapture = () => {
 
   return (
     <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-8 rounded-lg text-white text-center">
-      <h2 className="text-2xl font-bold mb-2">Join Twine Capital</h2>
+      <h2 className="text-2xl font-bold mb-2">Join TwineNexus</h2>
       <p className="mb-6 opacity-90">Create your account to get started</p>
       
       <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
@@ -134,7 +134,7 @@ const EmailCapture = () => {
 
         <button 
           type="submit" 
-          className="w-full bg-white text-blue-600 p-3 rounded font-bold hover:bg-gray-100 transition-colors disabled:opacity-50"
+          className="w-full bg-[#4F46E5] text-white p-3 rounded font-bold hover:bg-indigo-700 transition-colors disabled:opacity-50"
           disabled={isLoading}
         >
           {isLoading ? 'Creating Account...' : 'Create Account'}

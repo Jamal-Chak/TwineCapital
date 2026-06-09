@@ -14,7 +14,7 @@ export default function About() {
         }}>
             {/* Hero */}
             <section className="text-center py-16 px-6 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">About TwineCapital</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">About TwineNexus</h1>
                 <p className="max-w-2xl mx-auto text-lg text-slate-800 dark:text-gray-100">
                     We are a strategic partnership between accounting and software
                     professionals, delivering top-tier solutions for business growth.
@@ -77,7 +77,7 @@ export default function About() {
 
             {/* Team */}
             <section className="py-16 px-6 text-center bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm">
-                <h2 className="text-3xl font-bold mb-12 text-slate-gray dark:text-white">Meet the Team Behind TwineCapital</h2>
+                <h2 className="text-3xl font-bold mb-12 text-slate-gray dark:text-white">Meet the Team Behind TwineNexus</h2>
                 <div className="flex flex-wrap justify-center gap-8">
                     {/* Member 1 */}
                     <div className="card w-60">

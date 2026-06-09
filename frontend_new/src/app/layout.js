@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "TwineCapital",
+  title: "TwineNexus | AI Business Automation & Financial Operating System",
   description: "Driving Innovation, Powering Solutions",
 };
 

@@ -25,7 +25,7 @@ const blogPosts = [
             <h2>When to Upgrade Your Bookkeeping</h2>
             <p>If you're still using spreadsheets or shoebox receipts, it's time for a change. Modern cloud accounting solutions like Xero, QuickBooks, and Sage offer automation that saves hours of manual work while providing professional-grade financial insights.</p>
             
-            <p>At TwineCapital, we help businesses transition to better bookkeeping systems that scale with growth. Contact us to learn how we can transform your financial operations.</p>
+            <p>With TwineCapital, our AI-powered accounting tool, we help businesses transition to better bookkeeping systems that scale with growth. Contact us to learn how we can transform your financial operations.</p>
         `,
         category: "Accounting",
         author: "TwineCapital Team",
@@ -61,7 +61,7 @@ const blogPosts = [
             <h2>Working with Tax Professionals</h2>
             <p>While DIY tax software works for simple situations, growing businesses benefit from professional guidance. A qualified accountant can identify strategic tax planning opportunities, ensure compliance with changing regulations, and represent you if issues arise.</p>
             
-            <p>TwineCapital's tax preparation services combine technology efficiency with expert human oversight. Let us handle the complexity so you can focus on running your business.</p>
+            <p>TwineCapital, our AI-powered accounting tool, combines technology efficiency with expert human oversight. Let us handle the complexity so you can focus on running your business.</p>
         `,
         category: "Accounting",
         author: "Sarah Mitchell, CPA",
@@ -93,10 +93,10 @@ const blogPosts = [
             <h2>Mistake #5: Not Investing in Professional Help</h2>
             <p>DIY accounting might save money initially, but errors cost more in the long run. As your business grows, invest in professional bookkeeping, accounting, and financial advisory services. The ROI is substantial.</p>
             
-            <p>TwineCapital helps businesses avoid these mistakes through proactive financial management and expert guidance. Schedule a consultation to assess your financial health.</p>
+            <p>TwineCapital, our AI-powered accounting tool, helps businesses avoid these mistakes through proactive financial management and expert guidance. Schedule a consultation to assess your financial health.</p>
         `,
         category: "Accounting",
-        author: "TwineCapital Team",
+        author: "TwineNexus Team",
         date: "2025-04-05",
         readTime: "6 min read",
         image: "/assets/blog/financial-mistakes.jpg",
@@ -125,7 +125,7 @@ const blogPosts = [
             <h2>The Human-AI Partnership</h2>
             <p>AI won't replace accountants — it augments them. Technology handles repetitive tasks while professionals focus on strategy, advisory, and client relationships. This partnership delivers the best of both worlds: efficiency and expertise.</p>
             
-            <p>TwineCapital is developing AI-powered accounting solutions that combine cutting-edge technology with human expertise. Join our waitlist to be among the first to experience the future of financial management.</p>
+            <p>TwineNexus is developing TwineCapital, our AI-powered accounting solution that combines cutting-edge technology with human expertise. Join our waitlist to be among the first to experience the future of financial management.</p>
         `,
         category: "AI + Technology",
         author: "Dr. James Chen, AI Lead",
@@ -160,10 +160,10 @@ const blogPosts = [
             <h2>Getting Started with Automation</h2>
             <p>Begin by documenting your most time-consuming repetitive tasks. Prioritize those with high volume and clear rules. Modern no-code tools like Zapier, Make, and Microsoft Power Automate make automation accessible without programming expertise.</p>
             
-            <p>For complex business processes, TwineCapital develops custom automation solutions tailored to your specific workflows. Contact us to identify your highest-impact automation opportunities.</p>
+            <p>For complex business processes, TwineNexus develops custom automation solutions tailored to your specific workflows. Contact us to identify your highest-impact automation opportunities.</p>
         `,
         category: "AI + Technology",
-        author: "TwineCapital Team",
+        author: "TwineNexus Team",
         date: "2025-04-12",
         readTime: "5 min read",
         image: "/assets/blog/automation.jpg",
@@ -195,7 +195,7 @@ const blogPosts = [
             <h2>Investment and Growth</h2>
             <p>African fintech attracted over $2 billion in venture funding in recent years. International investors recognize the opportunity to serve a market of 1.4 billion people with innovative, scalable solutions.</p>
             
-            <p>TwineCapital is committed to advancing financial technology across Africa. Our solutions are designed with local context, addressing real challenges while driving economic inclusion and growth.</p>
+            <p>TwineNexus is committed to advancing financial technology across Africa. Our solutions are designed with local context, addressing real challenges while driving economic inclusion and growth.</p>
         `,
         category: "AI + Technology",
         author: "Amina Diallo, Africa Strategy Lead",
@@ -231,7 +231,7 @@ const blogPosts = [
             <h2>When to Seek External Help</h2>
             <p>Strategic consultants bring experience from multiple scaling journeys. They identify blind spots, recommend proven solutions, and help avoid costly mistakes. The investment typically pays for itself many times over.</p>
             
-            <p>TwineCapital's operational consulting helps businesses scale smoothly. From process optimization to technology implementation, we provide the expertise you need to grow with confidence.</p>
+            <p>TwineNexus's operational consulting helps businesses scale smoothly. From process optimization to technology implementation, we provide the expertise you need to grow with confidence.</p>
         `,
         category: "Business Growth",
         author: "Michael Roberts, Operations Director",
@@ -269,10 +269,10 @@ const blogPosts = [
             <h2>Getting Started</h2>
             <p>You don't need enterprise software to begin. Start with spreadsheet tracking of key metrics, then graduate to dedicated analytics tools as needs grow. The important thing is beginning the journey toward measurement and optimization.</p>
             
-            <p>TwineCapital helps businesses implement data analytics strategies that drive growth. From dashboard creation to predictive modeling, we turn your data into competitive advantage.</p>
+            <p>TwineNexus helps businesses implement data analytics strategies that drive growth. From dashboard creation to predictive modeling, we turn your data into competitive advantage.</p>
         `,
         category: "Business Growth",
-        author: "TwineCapital Analytics Team",
+        author: "TwineNexus Analytics Team",
         date: "2025-04-22",
         readTime: "5 min read",
         image: "/assets/blog/data-driven.jpg",
@@ -304,10 +304,10 @@ const blogPosts = [
             <h2>Technology Tools</h2>
             <p>Modern accounting software provides real-time cash flow visibility. Automated bank feeds, integrated invoicing, and predictive analytics give you unprecedented control over your financial position.</p>
             
-            <p>TwineCapital's cash flow management services help businesses maintain optimal liquidity. Let us analyze your cash cycles and implement strategies that ensure you always have resources when opportunities arise.</p>
+            <p>Using TwineCapital, our cash flow management tool helps businesses maintain optimal liquidity. Let us analyze your cash cycles and implement strategies that ensure you always have resources when opportunities arise.</p>
         `,
         category: "Business Growth",
-        author: "TwineCapital Team",
+        author: "TwineNexus Team",
         date: "2025-04-25",
         readTime: "6 min read",
         image: "/assets/blog/cash-flow.jpg",

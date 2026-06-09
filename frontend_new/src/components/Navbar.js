@@ -43,7 +43,7 @@ const Navbar = () => {
                         />
                     </div>
                     <span className="text-2xl font-bold text-white tracking-widest uppercase">
-                        <span className="text-primary">Twine</span>Capital
+                        <span className="text-primary">Twine</span>Nexus
                     </span>
                 </Link>
 

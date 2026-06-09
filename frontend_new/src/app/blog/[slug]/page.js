@@ -16,14 +16,14 @@ export async function generateMetadata({ params }) {
     
     if (!post) {
         return {
-            title: "Post Not Found | TwineCapital Blog",
+            title: "Post Not Found | TwineNexus Blog",
         };
     }
     
     return {
-        title: `${post.title} | TwineCapital Blog`,
+        title: `${post.title} | TwineNexus Blog`,
         description: post.excerpt,
-        keywords: [post.category, "TwineCapital", "business", "accounting", "fintech", "AI"],
+        keywords: [post.category, "TwineNexus", "business", "accounting", "fintech", "AI"],
         openGraph: {
             title: post.title,
             description: post.excerpt,
